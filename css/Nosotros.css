@@ -1,0 +1,209 @@
+#nosotros {
+    top: -115px;
+    z-index: 100; 
+    padding-top: 0.5rem;
+    max-height: 1500px;
+  }
+  #nosotros__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+  }
+  #nosotros__content #title__nosotros {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.25rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    height: 4.50rem;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    font-weight: 20rem;
+  }
+  #nosotros__content #Parrafo {
+    height: 730px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.875rem;
+    color: #092406;
+    letter-spacing: 0;
+    line-height: 22px;
+    max-width: 90vw;
+  }
+  #nosotros #slider {
+    max-width: 100vw;
+    max-height: 110vw;
+    
+        
+  }
+  #nosotros #slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 18s infinite alternate linear;
+}
+#nosotros #slider li {
+    width: 60%;
+    list-style: none;
+} 
+#nosotros #slider img {
+    width: 100%;
+    height: 75%;
+}
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;} 
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  #nosotros {
+    width: 100%;
+    height: 50rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+#nosotros #nosotros__content {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#nosotros #title__nosotros {
+  height: 62.08px;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  color: #060A24;
+  letter-spacing: 0;
+}
+#nosotros__content #Parrafo {
+  width: 50rem;
+  height: 46.875rem;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  font-size: 0.875rem;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#nosotros #slider{
+    margin: auto;
+    overflow: hidden;
+    width: 50rem;
+    height: 55rem;
+    margin-right: 2rem;
+    margin-top: 6rem ;
+   }
+#nosotros #slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    max-height: 46.875rem;
+    min-height: 46.875rem;
+    
+    animation: cambio 18s infinite alternate linear;
+}
+#nosotros #slider li {
+    width: 50%;
+    list-style: none;
+} 
+#nosotros #slider img {
+    width: 100%;
+    height: 90%;
+}
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;} 
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+}
+
+@media screen and (min-width: 1201px) {
+    #nosotros {
+        width: 100%;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+    #nosotros #nosotros__content {
+        margin-top: 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #nosotros #title__nosotros {
+      height: 3.88rem;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+      color: #060A24;
+      letter-spacing: 0;
+    }
+    #nosotros__content #Parrafo {
+      width: 50rem;
+      height: 55rem;
+      margin-top: 5rem;
+      margin-left: 4rem;
+      font-size: 1rem;
+      color: #060A24;
+      letter-spacing: 0;
+      line-height: 1.5rem;
+    }
+    #nosotros #slider{
+        margin: auto;
+        overflow: hidden;
+        width: 50rem;
+        height: 55rem;
+        margin-right: 4rem;
+        margin-top: 6rem ;
+        border: r;
+    }
+    #nosotros #slider ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        
+        animation: cambio 18s infinite alternate linear;
+    }
+    #nosotros #slider li {
+        width: 50%;
+        list-style: none;
+    } 
+    #nosotros #slider img {
+        width: 100%;
+        height: 80%;
+    }
+    @keyframes cambio {
+        0% { margin-left: 0; }
+        20% { margin-left: 0; }
+
+        25% { margin-left: -100%;}
+        45% { margin-left: -100%;}
+
+        50% { margin-left: -200%;}
+        70% { margin-left: -200%;} 
+
+        75% { margin-left: -300%;}
+        100% { margin-left: -300%;}
+    }
+}

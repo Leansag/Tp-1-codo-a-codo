@@ -1,0 +1,153 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header #navbar {
+    overflow: hidden;
+    width: 100%;
+}
+header #navbar #logo img {
+    width: 50px;
+    height: 30px;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+header #navbar .menu {
+    margin-top: 11.2px;
+    padding: 0;
+    list-style: none;
+    background-color:rgb(151, 148, 148);
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+header #navbar .menu li {
+    line-height: 3rem;
+    margin-left: 1rem;
+}
+
+header #navbar .menu a {
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(250, 249, 249);
+    font-size: 1rem;
+    letter-spacing: 0;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+#navbar .menu li a:hover {
+    color: #1a306e;
+    text-decoration: line-height ;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.25rem;
+}
+
+header #navbar .menu-icon {
+    margin-right: 1rem;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+header #navbar .menu-icon .nav-icon {
+    margin-right: 1rem;
+    bottom: 0.8rem;
+    background-color: #060A24;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+header #navbar .menu-icon .nav-icon:before {
+    background-color: #060A24;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all 0.2s ease-out;
+}
+header #navbar .menu-icon .nav-icon:after {
+    background-color: #060A24;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all 0.2s ease-out;
+}
+header #navbar .menu-btn {
+    display: none;
+}
+header #navbar .menu-btn:checked ~ .menu {
+    max-height: 100%;
+}
+header #navbar .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+header #navbar .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg); 
+    top: 0;
+}
+header #navbar .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    header #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header #navbar #logo img {
+        width: 60px;
+        height: 40px;
+        margin-left: 4rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    header #navbar .menu {
+        margin-top: 0;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-right: 4rem;
+    }
+    #navbar .menu li {
+        display: inline;
+        line-height: 28px;
+        padding: 1rem;
+    }
+    #navbar .menu li a {
+        font-family: 'IBM Plex Mono', monospace;
+      font-size: 20px;
+      color: #060A24;
+      letter-spacing: 0;
+      text-decoration: none;
+      line-height: 28px;
+      opacity: 100%;
+      font-weight: 400;
+    }
+    #navbar .menu li a:hover {
+        color: #298067;
+        text-decoration: line-height ;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 24px;
+    }
+    #navbar .menu li a:active {
+        color: rgba(#060A24, 0.56);
+        text-decoration: line-through;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+    #navbar .menu-icon {
+        display: none;
+    }
+}

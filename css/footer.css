@@ -1,0 +1,75 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+#footer #footer__title {
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    text-align: center;
+}
+#footer #footer__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+#footer #footer__icons .footer__social {
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    #video iframe {
+        width: 100%;
+        height: 500px
+}
+    
+ 
+    
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+    #footer #footer__title {
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
+        text-align: center;
+    }
+    #footer #footer__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    #footer #footer__icons .footer__social {
+        font-size: 1rem;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+}

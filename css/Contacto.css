@@ -1,0 +1,22 @@
+#Contacto {
+    
+    padding-left: 0.6875rem;
+    padding-right: 0.6875rem;
+    
+}
+
+@media screen and (min-width: 768px) {
+    #Contacto {
+    padding-left: 4rem;
+    padding-right: 5rem;   
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    margin: auto;
+    }
+    #Contacto #form {
+        max-width: 80%;
+        max-width: 70%;
+        
+    }
+ 
+}
